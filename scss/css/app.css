@@ -300,6 +300,16 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .demo-item {
+    width: calc(50% - 11px);
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .demo-item {
+    width: calc(50% - 11px);
+  }
+}
 .features-container {
   padding-top: 140px;
   display: flex;
