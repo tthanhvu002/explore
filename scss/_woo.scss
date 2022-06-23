@@ -1,0 +1,87 @@
+.woo{
+    color: #fff;
+    position: relative;
+    display: flex;
+    height: 400px;
+    justify-content: flex-end;
+    &-bg{
+        object-fit: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        filter: brightness(30%);
+    }
+    &-container{
+        height: 100%;
+        display: flex;
+        max-width: 42%;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 20px;
+        transform: translateX(2%);
+    }
+    &-img{
+        top: -28px;
+        left: 0;
+        width: 900px;
+        position: absolute;
+        height: 120%;
+        img{
+            height: 100%;
+        }
+    }
+    margin-left: auto;
+    .section-heading{
+        margin-top: 10px;
+        margin-bottom: 25px;
+        text-align: left;
+        color: #fff;
+    }
+
+    .section-text{
+        font-style: italic;
+        text-align: left;
+        color: #fff;
+
+    }
+    &-list{
+        width: 100%;
+        margin-right: 300px;
+        margin-top: 20px;
+        
+    }
+    &-item{
+        span{
+            color: #ffdd00;
+        }
+    }
+}
+
+@media screen and (min-width: 1380px) {
+    .woo{
+    height: 650px;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .woo{
+        &-img{
+            width: 575px;
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .woo{
+        display: flex;
+        flex-direction: column;
+        &-container{
+            max-width: unset;
+        }
+        &-img{
+            display: none;
+            width: 300px;
+            position: relative;
+        }
+    }
+}

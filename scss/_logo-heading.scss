@@ -1,0 +1,21 @@
+.logo-heading{
+    position: relative;
+    display: flex;
+    align-items: center;
+    span{
+        font-size: 20px;
+        color: #abafb5;
+        text-transform: uppercase;
+    }
+    .line{
+        width: 55px;
+        height: 2px;
+        background-color: #ffdd00;
+        margin-left: 10px;
+        align-self: flex-end;
+        margin-bottom: 5px;
+    }
+    img{
+        margin-left: 4px;
+    }
+}

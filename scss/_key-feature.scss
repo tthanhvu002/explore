@@ -1,0 +1,117 @@
+.key-feature{
+    &-container{
+        padding: 130px 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-heading, .logo-heading{
+
+    }
+    .section-heading{
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    &-list{
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    &-item{
+        width: calc(19% - 19px);
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        &-img{
+            border-radius: 50%;
+            padding: 60px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 35px;
+                height: 35px;
+                margin: 0;
+            }
+        }
+        p{
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+    }
+}
+@media screen and (min-width: 1380px) {
+    .key-feature{
+        &-list{
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 124px;
+        }
+        &-item{
+            width: calc(28% - 135px);
+            &-img{
+                border-radius: 50%;
+                padding: 42px;
+                background-color: #fff;
+                box-shadow: 0px 0px 10px #ccc;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 35px;
+                    height: 35px;
+                    margin: 0;
+                }
+            }
+            p{
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: bold;
+                text-transform: uppercase;
+    
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .key-feature{
+        &-list{
+            flex-wrap: wrap;
+        }
+        &-item{
+            width: calc(23% - 19px);
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .key-feature{
+        &-container{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        &-list{
+            gap: 30px;
+        }
+        &-item{
+            text-align: center;
+            width: calc(42% - 19px);
+
+            &-img{
+                padding: 40px;
+            }
+        }
+    }
+}
